@@ -1326,7 +1326,7 @@ if ($text == $datatextbot['text_help'] || $datain == "helpbtn" || $text == "/hel
 if ($text == $datatextbot['text_support'] || $text == "/support") {
     sendmessage($from_id, $textbotlang['users']['support']['btnsupport'], $supportoption, 'HTML');
 } elseif ($datain == "support") {
-    sendmessage($from_id, $textbotlang['users']['support']['sendmessageuser'], $backuser, 'HTML');
+    
     step('gettextpm', $from_id);
 } elseif ($user['step'] == 'gettextpm') {
     sendmessage($from_id, $textbotlang['users']['support']['sendmessageadmin'], $keyboard, 'HTML');
